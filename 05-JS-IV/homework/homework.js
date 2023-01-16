@@ -80,8 +80,12 @@ function tieneEmail (usuario) {
   //   return false
   // }
   // return usuario['email'] ? true : false
+
   return !!usuario['email']
+
+  // return Object.values(usuario['email'])
 }
+console.log(tieneEmail({ usernombre: 'Samuel', email: 'samuel@email.com' }))//(true);
 
 function tienePropiedad (objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"

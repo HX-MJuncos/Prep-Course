@@ -49,6 +49,36 @@ var usuarios = [
     }
    }  
 ]
+//-------------------------------------------------
+
+function corte(num) {
+    var lista = []
+    for (let i = 0; i < num.length; i++) {
+        if(num[i] === 5) break 
+        lista.push(num[i])   
+    }
+    return lista
+}
+console.log(corte([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
 
+const usuario = {
+    username: 'juan.perez',
+    password: 'loremipsumpwd123',
+    lovesJavascript: true,
+    favoriteNumber: 42
+};
+
+for (let clave in usuario){
+    console.log(clave);
+    console.log(usuario[clave]);
   
+
+// username
+// 'juan.perez'
+// password
+// 'loremipsumpwd123'
+// lovesJavascript
+// true
+// favoriteNumber
+// 42

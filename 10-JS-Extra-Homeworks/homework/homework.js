@@ -71,6 +71,7 @@ console.log(asAmirror("I love you so much!"))//("I evol uoy os !hcum")
 
 
 function capicua(numero){
+  console.log(numero, typeof numero)
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
@@ -85,7 +86,7 @@ function capicua(numero){
   }
   return "No es capicua"
 }
-console.log(capicua(12321))//("Es capicua")
+console.log(capicua(12321), )//("Es capicua")
 
 
 function deleteAbc(cadena){
@@ -100,6 +101,7 @@ function deleteAbc(cadena){
   }
   return cadena2;
 }
+
 
 
 function sortArray(arr) {
